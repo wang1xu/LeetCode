@@ -31,6 +31,7 @@ public class diyigecuowubanben278 {
         String s = input.nextLine();
         n = Integer.parseInt(s.split(" ")[0]);
         VersionControl.bad = Integer.parseInt(s.split(" ")[1]);
+
 //        n=5;
 //        day1_Binary_search.VersionControl.bad=2;
 
