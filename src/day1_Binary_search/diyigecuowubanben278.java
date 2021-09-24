@@ -23,6 +23,7 @@ import java.util.Scanner;
 提示：
 1 <= bad <= n <= 231 - 1
  */
+
 public class diyigecuowubanben278 {
     public static void main(String[] args) {
         int n;
