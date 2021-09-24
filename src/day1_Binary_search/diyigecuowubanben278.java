@@ -1,3 +1,5 @@
+package day1_Binary_search;
+
 import java.util.Scanner;
 
 /*
@@ -30,7 +32,7 @@ public class diyigecuowubanben278 {
         n = Integer.parseInt(s.split(" ")[0]);
         VersionControl.bad = Integer.parseInt(s.split(" ")[1]);
 //        n=5;
-//        VersionControl.bad=2;
+//        day1_Binary_search.VersionControl.bad=2;
 
         System.out.println(so.firstBadVersion(n));
 //        System.out.println(Solution.isBadVersion(n));
