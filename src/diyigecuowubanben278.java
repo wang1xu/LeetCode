@@ -42,7 +42,7 @@ public class diyigecuowubanben278 {
             int high = n;
             int mid;
             while (low < high) {
-                mid = (low + high) / 2;
+                mid = low+(high-low)/2;
                 if (isBadVersion(mid)) {
                     high = mid ;
                 } else {
@@ -59,7 +59,7 @@ class VersionControl {
     public static int bad;
 
     public static boolean isBadVersion(int version) {
-        if (version < bad) {
+        if(version < bad) {
             return false;
         } else {
             return true;
