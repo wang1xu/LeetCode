@@ -27,15 +27,16 @@ public class erfenchazhao704 {
     public static int search(int[] nums, int target) {
         int left=0;
         int right=nums.length-1;
-        int index=(left+right)/2;
+        int index;
         while(left<=right){
+            index = (right - left) / 2 + left;
             if(nums[index]==target) return index;
             if(nums[index]>target){
                 right=index-1;
             }else{
                 left=index+1;
             }
-            index = (right - left) / 2 + left;
+
         }
         return -1;
     }
