@@ -21,7 +21,7 @@ nums的每个元素都将在[-9999, 9999]之间。
 public class erfenchazhao704 {
     public static void main(String[] args) {
         int[] nums = {-1, 0, 3, 5, 9, 12};
-        int target = 9;
+        int target = 66;
         System.out.println(search(nums,target));
     }
     public static int search(int[] nums, int target) {
