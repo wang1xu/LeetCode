@@ -50,5 +50,6 @@ public class xuanzhuanshuzu189 {
                 nums[i] = r_nums[i];
             }
         }
+
     }
 }
