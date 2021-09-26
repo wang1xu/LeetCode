@@ -50,6 +50,15 @@ public class xuanzhuanshuzu189 {
                 nums[i] = r_nums[i];
             }
         }
+/*
+        int n = nums.length;
 
+        int[] news = Arrays.copyOf(nums,n);
+
+        for (int i = 0; i < n; i++) {
+            nums[(i+k)%n] = news[i];
+        }
+
+ */
     }
 }
