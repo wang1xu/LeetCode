@@ -40,6 +40,7 @@ public class xuanzhuanshuzu189 {
         rotate(nums,k);
         System.out.println(Arrays.toString(nums));
     }
+
     public static void rotate(int[] nums, int k) {
         if (k != 0) {
             int[] r_nums = new int[nums.length];
