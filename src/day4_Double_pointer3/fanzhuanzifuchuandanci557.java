@@ -18,7 +18,7 @@ public class fanzhuanzifuchuandanci557 {
         String s = "Let's take LeetCode contest";
         s = reverseWords(s);
         System.out.println(s);
-
+        System.out.println("hot test");
     }
 
     public static String reverseWords(String s) {
