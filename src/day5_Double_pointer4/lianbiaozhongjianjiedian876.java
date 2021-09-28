@@ -44,6 +44,14 @@ public class lianbiaozhongjianjiedian876 {
      ListNode(int val, ListNode next) { this.val = val; this.next = next; }
   }
     public static ListNode middleNode(ListNode head) {
+//        双指针法，快慢指针
+        ListNode slow = head, fast = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow;
+        /*
         ListNode p;
         p=head;
         int counter = 0;
