@@ -59,6 +59,8 @@ public class lianbiaozhongjianjiedian876 {
             mid++;
         }
         return p;
+
+         */
     }
 
     public static void showListNode(ListNode head) {
