@@ -1,4 +1,4 @@
-package DFS_BFS;
+package day7_DFS_BFS;
 
 import java.util.Arrays;
 
@@ -59,6 +59,7 @@ public class tuxiangxuanran733 {
                 int mx = x + dx[i], my = y + dy[i];
                 if (mx >= 0 && mx < image.length && my >= 0 && my < image[0].length) {
                     dfs(image, mx, my, color, newColor);
+
                 }
             }
         }
