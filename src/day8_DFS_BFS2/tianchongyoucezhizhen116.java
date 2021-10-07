@@ -29,7 +29,7 @@ struct Node {
  */
 public class tianchongyoucezhizhen116 {
     public static void main(String[] args) {
-        System.out.println("ads");
+
     }
 
 }
