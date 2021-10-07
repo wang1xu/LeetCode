@@ -1,6 +1,8 @@
 package day7_DFS_BFS;
 
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
 
 /*
 有一幅以二维整数数组表示的图画，每一个整数表示该图画的像素值大小，数值在 0 到 65535 之间。
@@ -47,11 +49,14 @@ public class tuxiangxuanran733 {
     public static int[][] floodFill(int[][] image, int sr, int sc, int newColor) {
         int currColor = image[sr][sc];
         if (currColor != newColor) {
-            dfs(image,sr,sc,currColor,newColor);
+//            dfs(image,sr,sc,currColor,newColor);
+            BFS(image,sr,sc,currColor,newColor);
+
         }
         return image;
     }
 
+//    BFS广度优先搜索，采用栈的方式，由一点向边缘发散
     public static void dfs(int[][] image, int x, int y, int color, int newColor) {
         if (image[x][y] == color) {
             image[x][y] = newColor;
@@ -60,6 +65,30 @@ public class tuxiangxuanran733 {
                 if (mx >= 0 && mx < image.length && my >= 0 && my < image[0].length) {
                     dfs(image, mx, my, color, newColor);
 
+                }
+            }
+        }
+    }
+
+//DFS深度优先搜索，采用递归方式，一条线，从外向内靠拢
+    public static void BFS(int[][] image, int x, int y, int currColor, int newColor) {
+        if (currColor == newColor) {
+            return;
+        }
+        int row= image.length,col= image[0].length;
+        int[] dx = {1, -1, 0, 0};
+        int[] dy = {0, 0, 1, -1};
+        Queue<int[]> queue = new LinkedList<int[]>();
+        queue.offer(new int[]{x, y});
+        image[x][y]=newColor;
+        while (!queue.isEmpty()) {
+            int[] cell = queue.poll();
+            int x1 = cell[0], y1 = cell[1];
+            for (int i = 0; i < 4; i++) {
+                int mx = x1 + dx[i], my = y1 + dy[i];
+                if (mx >= 0 && mx < row && my >= 0 && my < col && image[mx][my] == currColor) {
+                    queue.offer(new int[]{mx, my});
+                    image[mx][my]=newColor;
                 }
             }
         }
