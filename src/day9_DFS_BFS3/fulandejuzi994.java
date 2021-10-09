@@ -63,6 +63,7 @@ class Solution1 {
             }
         }
         int min=0;
+        //核心思想仍是BFS，从源节点遍历，但是这里是多个源节点，因此使用两个栈，第一个栈存储原始源节点，第二个栈存储新的更新的源节点
         while (!queue.isEmpty()) {
             Queue<int[]> newqueue = new LinkedList<>();
             while (!queue.isEmpty()) {
