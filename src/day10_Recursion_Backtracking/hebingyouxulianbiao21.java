@@ -65,7 +65,6 @@ class Solution {
         }
     }
 
-
 }
 
 class ListNode {

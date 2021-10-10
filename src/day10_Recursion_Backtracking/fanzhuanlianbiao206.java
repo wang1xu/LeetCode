@@ -39,7 +39,6 @@ public class fanzhuanlianbiao206 {
 
         hebingyouxulianbiao21.showListNode(newl);
 
-
     }
 
 }
