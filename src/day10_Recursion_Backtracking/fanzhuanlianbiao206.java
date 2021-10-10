@@ -38,7 +38,6 @@ public class fanzhuanlianbiao206 {
         newl=solution.reverseList(l1);
 
         hebingyouxulianbiao21.showListNode(newl);
-
     }
 
 }
@@ -73,7 +72,6 @@ class Solution1 {
         root.next.next=roottemp;
 
         digui(root, temp);
-
 
     }
 }
